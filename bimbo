@@ -1,0 +1,6 @@
+git init 
+https://github.com/Xim-burci1k/Actividad-4-.git
+git add .
+git commit -m "Primer commit - proyecto Angular actividad4"
+git branch -M main
+git push -u origin main
