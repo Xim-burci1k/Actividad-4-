@@ -8,6 +8,40 @@
 	box-shadow: 0 2px 8px #ccc;
 }
 
+.team-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+	margin-top: 2rem;
+}
+
+.team-card {
+	display: flex;
+	align-items: center;
+	background: #f4f4f4;
+	border-radius: 8px;
+	box-shadow: 0 1px 4px #eee;
+	padding: 1rem;
+	gap: 1rem;
+	transition: box-shadow 0.2s;
+}
+.team-card:hover {
+	box-shadow: 0 4px 16px #bbb;
+}
+.icon {
+	font-size: 2.5rem;
+	margin-right: 0.5rem;
+}
+.team-card h2 {
+	margin: 0 0 0.3rem 0;
+	font-size: 1.2rem;
+	color: #2c3e50;
+}
+.team-card p {
+	margin: 0;
+	color: #555;
+}
+
 .home-container h1 {
 	color: #2c3e50;
 	text-align: center;
