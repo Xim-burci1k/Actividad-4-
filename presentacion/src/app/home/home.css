@@ -1,0 +1,28 @@
+
+.home-container {
+	max-width: 600px;
+	margin: 40px auto;
+	background: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px #ccc;
+}
+
+.home-container h1 {
+	color: #2c3e50;
+	text-align: center;
+}
+
+.team-list {
+	list-style: none;
+	padding: 0;
+}
+
+.team-member {
+	background: #f4f4f4;
+	margin: 10px 0;
+	padding: 15px;
+	border-radius: 6px;
+	font-size: 1.1em;
+	box-shadow: 0 1px 4px #eee;
+}
