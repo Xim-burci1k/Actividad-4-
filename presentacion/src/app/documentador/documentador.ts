@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-documentador',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './documentador.html',
   styleUrl: './documentador.css'
 })
