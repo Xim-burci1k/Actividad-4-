@@ -1,0 +1,42 @@
+
+.bienvenida-container {
+	max-width: 650px;
+	margin: 50px auto 0 auto;
+	background: linear-gradient(135deg, #fff 60%, #e0e7ff 100%);
+	border-radius: 18px;
+	box-shadow: 0 6px 24px #b3b3ff99, 0 1.5px 6px #b3b3ff44;
+	padding: 36px 30px 30px 30px;
+	text-align: center;
+	animation: fadeInUp 1.2s cubic-bezier(.39,.575,.565,1) both;
+}
+.logo-bienvenida img {
+	width: 110px;
+	margin-bottom: 1.2rem;
+	border-radius: 16px;
+	box-shadow: 0 2px 12px #6366f1aa;
+}
+.bienvenida-container h1 {
+	color: #4f46e5;
+	font-size: 2.1rem;
+	margin-bottom: 1rem;
+	letter-spacing: 1px;
+}
+.desc {
+	color: #333;
+	font-size: 1.1rem;
+	background: #f1f5ff;
+	border-radius: 8px;
+	padding: 0.7rem 1rem;
+	box-shadow: 0 1px 6px #b3b3ff33;
+	margin-bottom: 0;
+}
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
