@@ -1,4 +1,12 @@
-import { Component, signal } from '@angular/core';
+
+// Declaración global para evitar error de TypeScript
+declare global {
+  interface Window {
+    Notiflix: any;
+  }
+}
+
+import { Component, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -7,6 +15,25 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('presentacion');
+export class App implements AfterViewInit {
+  protected readonly title = 'prueba';
+
+  ngAfterViewInit() {
+    if (window.Notiflix && window.Notiflix.Notify) {
+      window.Notiflix.Notify.init({
+        position: 'right-bottom',
+        width: '320px',
+        fontSize: '18px',
+        success: {
+          background: '#43A047',
+          textColor: '#fff',
+        },
+        failure: {
+          background: '#d32f2f',
+          textColor: '#fff',
+        },
+      });
+      window.Notiflix.Notify.success('EQUIPO BIMBO');
+    }
+  }
 }
