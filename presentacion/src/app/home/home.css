@@ -1,62 +1,148 @@
+body {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0f4ff 100%);
+  min-height: 100vh;
+}
 
+/* Estilos modernos para Home */
 .home-container {
-	max-width: 600px;
-	margin: 40px auto;
-	background: #fff;
-	padding: 30px;
-	border-radius: 10px;
-	box-shadow: 0 2px 8px #ccc;
+  max-width: 700px;
+  margin: 48px auto;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f0f4ff 100%);
+  padding: 38px 32px 32px 32px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px #6366f144, 0 1.5px 6px #b3b3ff44;
+  border: 3px solid #6366f1;
+  text-align: center;
+  /* Quitar opacidad y blur */
+  /* backdrop-filter: blur(2px); */
+}
+.home-title {
+  color: #4f46e5;
+  font-size: 2.7rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #b3b3ff44;
+  font-weight: 700;
+}
+.home-intro {
+  font-size: 1.18rem;
+  color: #333;
+  margin-bottom: 2.2rem;
+  background: #f1f5ff;
+  border-radius: 12px;
+  padding: 1.1rem 1.5rem;
+  box-shadow: 0 1px 12px #b3b3ff33;
+  display: inline-block;
+  font-weight: 400;
+}
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.home-link-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #b3b3ff33;
+  padding: 22px 32px 18px 32px;
+  text-decoration: none;
+  color: #4f46e5;
+  font-size: 1.18rem;
+  font-weight: 500;
+  border: 2px solid #6366f1;
+  transition: box-shadow 0.2s, transform 0.15s, background 0.2s;
+  margin-bottom: 12px;
+}
+.home-link-card:hover {
+  box-shadow: 0 6px 24px #6366f1aa;
+  background: #f0f4ff;
+  transform: translateY(-4px) scale(1.04);
+}
+.home-link-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px #b3b3ff44;
+  border: 3px solid #6366f1;
+  background: #fff;
+  object-fit: cover;
+}
+.home-btn {
+  min-width: 260px;
+  min-height: 100px;
+  font-size: 2.2rem;
+  font-weight: 400;
+  border-radius: 16px;
+  background: #f6f8ff;
+  border-width: 2px;
+  border-style: solid;
+  transition: box-shadow 0.2s, transform 0.15s, background 0.2s;
+  box-shadow: 0 2px 12px #b3b3ff22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.home-btn.doc {
+  color: #2563eb;
+  border-color: #2563eb;
+}
+.home-btn.doc:hover {
+  background: #e0e7ff;
+  box-shadow: 0 6px 24px #2563eb33;
+  transform: translateY(-2px) scale(1.03);
+}
+.home-btn.tester {
+  color: #15803d;
+  border-color: #15803d;
+}
+.home-btn.tester:hover {
+  background: #d1fae5;
+  box-shadow: 0 6px 24px #15803d33;
+  transform: translateY(-2px) scale(1.03);
+}
+.home-footer {
+  margin-top: 32px;
+  color: #6366f1;
+  font-size: 1.12rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  opacity: 0.95;
+  font-weight: 500;
 }
 
-.team-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 1.5rem;
-	margin-top: 2rem;
+/* Estilos para el navbar */
+.navbar {
+  background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%) !important;
+  box-shadow: 0 2px 12px #6366f122;
+}
+.navbar .navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #fff !important;
+}
+.navbar-nav .nav-link {
+  margin-right: 18px;
+  color: #3730a3 !important;
+  font-weight: 500;
+  transition: color 0.2s;
+  opacity: 1 !important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: #4f46e5 !important;
+  text-decoration: underline;
+  opacity: 1 !important;
 }
 
-.team-card {
-	display: flex;
-	align-items: center;
-	background: #f4f4f4;
-	border-radius: 8px;
-	box-shadow: 0 1px 4px #eee;
-	padding: 1rem;
-	gap: 1rem;
-	transition: box-shadow 0.2s;
-}
-.team-card:hover {
-	box-shadow: 0 4px 16px #bbb;
-}
-.icon {
-	font-size: 2.5rem;
-	margin-right: 0.5rem;
-}
-.team-card h2 {
-	margin: 0 0 0.3rem 0;
-	font-size: 1.2rem;
-	color: #2c3e50;
-}
-.team-card p {
-	margin: 0;
-	color: #555;
-}
-
-.home-container h1 {
-	color: #2c3e50;
-	text-align: center;
-}
-
-.team-list {
-	list-style: none;
-	padding: 0;
-}
-
-.team-member {
-	background: #f4f4f4;
-	margin: 10px 0;
-	padding: 15px;
-	border-radius: 6px;
-	font-size: 1.1em;
-	box-shadow: 0 1px 4px #eee;
+/* Fondo sutil para la barra */
+.bg-body-tertiary {
+  background: transparent !important;
 }
