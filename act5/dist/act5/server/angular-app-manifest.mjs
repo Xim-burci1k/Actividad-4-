@@ -24,12 +24,12 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 5022, hash: '643710b9b60e94c114c052cfe6e916672d202a46b9aaf433aa16771b8ac24b61', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 994, hash: '698cd96697e3162b8cf3b8fbb27d254df7cd0e6645b6b95dad6c90d13b805b5d', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'proyect-mannager/index.html': {size: 12257, hash: '1053c396705223c5642e9a0af2ffe4b35a8aa1ff96fbc4c2dd832dfd71b9b977', text: () => import('./assets-chunks/proyect-mannager_index_html.mjs').then(m => m.default)},
-    'index.html': {size: 7344, hash: '3edd1a03d1b0cfefce3629bd3c458c490121fc4a778f013192158c9d899bad77', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'documentador/index.html': {size: 8233, hash: '9561ae354160b292d272ae690a4f2c0e85b569a1c02e70e1ce637b106b65e7b4', text: () => import('./assets-chunks/documentador_index_html.mjs').then(m => m.default)},
-    'bienvenida/index.html': {size: 6508, hash: '04c05af9e678a02e02f0bba0dcfb437d8fa2bc4943b61aee7ed81350b43d2eed', text: () => import('./assets-chunks/bienvenida_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 5022, hash: '99e5a9aa47ddc37ca5ff93603fe0890bb3191e15a5235fbf5605bcc8300d088c', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 994, hash: 'ca5ef1154c84b5daf8137f7c2ca9da91ed4cd85c09f3c892b3648f2a74484342', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'documentador/index.html': {size: 23584, hash: '20803636f40dc0a46bca6c62696400f28d285cfa435fde18dcd6be8dfa78b012', text: () => import('./assets-chunks/documentador_index_html.mjs').then(m => m.default)},
+    'bienvenida/index.html': {size: 22309, hash: 'c2edcccf452f022d9d34fd03a6f5d083da69e1458f3828417bc63407bbb85ca1', text: () => import('./assets-chunks/bienvenida_index_html.mjs').then(m => m.default)},
+    'index.html': {size: 22695, hash: 'decde09a9e5e5d15d8ced083b3641fc426e7f8e822130559c69afbb42358f8c1', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'proyect-mannager/index.html': {size: 22842, hash: '3d2396058203cd7ea69943f6a8e06a7b760b8e8667d95967ab88f232209b7598', text: () => import('./assets-chunks/proyect-mannager_index_html.mjs').then(m => m.default)},
     'styles-VRDYZCWE.css': {size: 230966, hash: 'yJEOwb9t5lw', text: () => import('./assets-chunks/styles-VRDYZCWE_css.mjs').then(m => m.default)}
   },
 };
