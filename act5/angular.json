@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "presentacion": {
+    "act5": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -14,9 +14,6 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -25,13 +22,18 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+    
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ]
+            ],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -61,10 +63,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "presentacion:build:production"
+              "buildTarget": "act5:build:production"
             },
             "development": {
-              "buildTarget": "presentacion:build:development"
+              "buildTarget": "act5:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,10 +77,6 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
@@ -95,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "9a077f36-2098-4eca-8259-cea5f1a90754"
+    "analytics": "3c6e4a60-797e-4551-abd7-f38488ee225d"
   }
 }
