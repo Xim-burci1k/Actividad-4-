@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/": {},
+    "/bienvenida": {},
+    "/documentador": {},
+    "/proyect-mannager": {}
+  }
+}
