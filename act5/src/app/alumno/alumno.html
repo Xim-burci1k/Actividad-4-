@@ -1,14 +1,21 @@
-<div class="¨container">
-    <h1> Listado de alumnos</h1>
+<div class="container">
+    <!-- Vista sencilla de listado de alumnos (estructura base). -->
+    <h1>listado de alumnos</h1>
     <div class="row">
-        </div class="col-md-4">
+
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-info" (click)="irAgregarAlumno()">Agregar alumno
+                <i class="bi bi-person-plus-fill" ms-2></i>
+            </button>
         </div>
-        <div class="cold-md-4"
-              <button type="button" (click)="onAddAlumno()" class="btn btn-primary">agregar alumno <i class="bi bi-person-plus-fill ms-2"></i>
-            </butoon>
-        <div> 
-        <div class="cold-md-4">
-        </button type="butoon" class="btn btn-warning">Modificar alumno <i class="bi bi-pencil-fill ms-2"></i>
-        <butoon>
-    <div></div>
-        </butoon>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-info" (click)="irModificarAlumno()">Modificar alumno
+                <i class="bi bi-pencil-square ms-2"></i>
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-outline-info" (click)="irEliminarAlumno()">Eliminar alumno<i class="bi bi-trash3 ms-2"></i></button>
+        </div>
+
+    </div>
+</div>
