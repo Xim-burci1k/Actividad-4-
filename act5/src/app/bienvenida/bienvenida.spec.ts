@@ -1,18 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { provideZonelessChangeDetection } from '@angular/core';
 
-import { Bienvenida } from './bienvenida';
+import { BienvenidaComponent } from './bienvenida';
 
-describe('Bienvenida', () => {
-  let component: Bienvenida;
-  let fixture: ComponentFixture<Bienvenida>;
+describe('BienvenidaComponent', () => {
+  let component: BienvenidaComponent;
+  let fixture: ComponentFixture<BienvenidaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Bienvenida]
+      imports: [BienvenidaComponent, RouterTestingModule],
+      providers: [provideZonelessChangeDetection()]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Bienvenida);
+    fixture = TestBed.createComponent(BienvenidaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

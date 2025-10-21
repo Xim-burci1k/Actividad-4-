@@ -1,0 +1,13 @@
+export default `<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Act5</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.css"></head>
+<body><!--nghm--><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
+</script><script>window.__jsaction_bootstrap(document.body,"ng",["click"],[]);</script>
+  <app-root ng-version="20.3.2" ngh="1" ng-server-context="ssg"><nav class="navbar navbar-expand-lg navbar-dark bg-primary"><div class="container-fluid"><a href="#" class="navbar-brand">act5</a><button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button><div id="navbarNav" class="collapse navbar-collapse"><ul class="navbar-nav"><li class="nav-item"><a routerlink="/" class="nav-link" href="/" jsaction="click:;">Home</a></li><li class="nav-item"><a routerlink="/bienvenida" class="nav-link" href="/bienvenida" jsaction="click:;">Bienvenida</a></li><li class="nav-item"><a routerlink="/documentador" class="nav-link" href="/documentador" jsaction="click:;">Documentador</a></li><li class="nav-item"><a routerlink="/proyect-mannager" class="nav-link" href="/proyect-mannager" jsaction="click:;">Proyect Mannager</a></li></ul></div></div></nav><main class="container mt-4"><router-outlet></router-outlet><app-home ngh="0"><div class="container mt-4"><div class="card"><div class="card-body"><h2 class="card-title">Home</h2><p class="card-text">¡Bienvenido a la página principal!</p></div></div></div></app-home><!--container--></main></app-root>
+<script src="main.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"21":[{"i":"c2082941643","r":1}]}}]}</script></body></html>`;

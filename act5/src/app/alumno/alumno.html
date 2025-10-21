@@ -1,11 +1,11 @@
 <div class="container">
     <!-- Vista sencilla de listado de alumnos (estructura base). -->
-    <h1>listado de alumnos</h1>
+    <h1>listado de alumno</h1>
     <div class="row">
 
         <div class="col-md-4">
             <button type="button" class="btn btn-outline-info" (click)="irAgregarAlumno()">Agregar alumno
-                <i class="bi bi-person-plus-fill" ms-2></i>
+                <i class="bi bi-person-plus-fill ms-2"></i>
             </button>
         </div>
         <div class="col-md-4">
@@ -17,5 +17,38 @@
             <button type="button" class="btn btn-outline-info" (click)="irEliminarAlumno()">Eliminar alumno<i class="bi bi-trash3 ms-2"></i></button>
         </div>
 
+    </div>
+    <div class="container">
+        <!-- Debug: mostrar respuesta cruda de la API -->
+        <div *ngIf="rawResponse" class="alert alert-secondary mt-3">
+            <h6>Depuración: respuesta cruda de la API</h6>
+            <pre style="max-height:200px; overflow:auto;">{{ rawResponse | json }}</pre>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Grado</th>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Especialidad</th>
+                    <th scope="col">Turno</th>
+                    <!-- agregar edad -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let alumno of alumnos; let i  =index"><!-- sirve para guardas arrays de objetos -->
+                    <th scope="row">{{ i + 1 }}</th><!-- en agregar alumno se genera los datos del alumno -->
+                    <td>{{ alumno.nombre }}</td>
+                    <td>{{ alumno.apellidos }}</td>
+                    <td>{{ alumno.grado }}</td>
+                    <td>{{ alumno.grupo }}</td>
+                    <td>{{ alumno.especialidad }}</td>
+                    <td>{{ alumno.turno }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

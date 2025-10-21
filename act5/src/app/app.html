@@ -1,28 +1,22 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">act5</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link" [routerLink]="['/']" routerLinkActive="active" aria-current="page">Home</a>
-        <a class="nav-link" [routerLink]="['/bienvenida']" routerLinkActive="active">Bienvenida</a>
-        <a class="nav-link" [routerLink]="['/documentador']" routerLinkActive="active">Documentador</a>
-        <a class="nav-link" [routerLink]="['/proyect-mannager']" routerLinkActive="active">Proyect Mannager</a>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/bienvenida">Bienvenida</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/documentador">Documentador</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/proyect-mannager">Proyect Mannager</a></li>
+      </ul>
     </div>
   </div>
 </nav>
-<div class="container mt-4">
+
+<main class="container mt-4">
   <router-outlet></router-outlet>
-</div>
-    </div>
-  </div>
 </main>
 
-
-
-<router-outlet />

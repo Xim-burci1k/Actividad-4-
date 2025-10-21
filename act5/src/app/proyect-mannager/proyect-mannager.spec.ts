@@ -1,18 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { provideZonelessChangeDetection } from '@angular/core';
 
-import { ProyectMannager } from './proyect-mannager';
+import { ProyectMannagerComponent } from './proyect-mannager';
 
-describe('ProyectMannager', () => {
-  let component: ProyectMannager;
-  let fixture: ComponentFixture<ProyectMannager>;
+describe('ProyectMannagerComponent', () => {
+  let component: ProyectMannagerComponent;
+  let fixture: ComponentFixture<ProyectMannagerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProyectMannager]
+      imports: [ProyectMannagerComponent, RouterTestingModule],
+      providers: [provideZonelessChangeDetection()]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProyectMannager);
+    fixture = TestBed.createComponent(ProyectMannagerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
